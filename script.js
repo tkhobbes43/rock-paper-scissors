@@ -12,6 +12,12 @@ function getRandomInt() {
     var computerChoice = Math.floor(Math.random(3));
     console.log(computerChoice);
     console.log(gameChoices[computerChoice]);
+    if (userChoice === computerChoice) {   
+        ties++;
+        window.alert("It's a tie!");
+    } else if (
+        
+    )
 }
 
 getRandomInt();
