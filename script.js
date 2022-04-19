@@ -1,23 +1,27 @@
-// this is initial prompt to play the game //
-// put all the variables at the top //
-var userChoice = prompt("Let's play Rock, Paper, Scissors. Please enter R, P, S.");
+// results //
+var wins = 0;
+var ties = 0;
+var losses = 0;
 
-var computerChoice = alert()
-// telling you what you entered //
-console.log(userChoice);
+// array of options for computer to pick from //
+var options = ["R", "P", "S"];
 
-// this is for computer to randomly generate his choice for the game //
-function getRandomInt() {
-    var gameChoices = ["R", "P", "S"];
-    var computerChoice = Math.floor(Math.random(3));
-    console.log(computerChoice);
-    console.log(gameChoices[computerChoice]);
-    if (userChoice === computerChoice) {   
-        ties++;
-        window.alert("It's a tie!");
-    } else if (
-        
-    )
+// fucntion for the whole game starting here //
+var playGame = function () {
+    // ask user for their choice //
+    var userChoice = window.prompt("Enter R, P, or S:");
+
+    // if user pressed Cancel, immediately end function //
+    if (!userChoice) {
+        return;
+    }
+    
+    // convert to uppercase to make comparisons easier //
+    userChoice = userChoice.toUpperCase();
+    console.log(userChoice)
+
+    //get random index from array of options //
+    
+
+
 }
-
-getRandomInt();
